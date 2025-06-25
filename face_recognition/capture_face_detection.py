@@ -20,11 +20,10 @@ while True:
     if not ret:
         break
 
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray, 1.1, 5)
+    faces = face_cascade.detectMultiScale(frame, 1.1, 5)
 
     for (x, y, w, h) in faces:
-        roi = gray[y:y+h, x:x+w]    
+        roi = frame[y:y+h, x:x+w]    
         count += 1 
         cv2.imwrite(f"{folder}/{count}.jpg", roi)
         cv2.putText(frame, f"Saved: {count}", (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,255,0), 2)
