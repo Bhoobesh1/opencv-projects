@@ -7,7 +7,7 @@ known_face_encodings = []
 known_face_names = []
 
 # Path to main folder (each subfolder = one person)
-known_dir = "faces"
+known_dir = r"C:\Users\bhoob\OneDrive\Documents\python project\faces"
 
 # Loop through each person’s folder
 for person_name in os.listdir(known_dir):
