@@ -12,7 +12,7 @@ known_dir = r"C:\Users\bhoob\OneDrive\Documents\python project\faces"
 # Loop through each person’s folder
 for person_name in os.listdir(known_dir):
     person_folder = os.path.join(known_dir, person_name)
-    if not os.path.isdir(person_folder):
+    if not os.path.isdir(person_folder):# says take only folder
         continue
     
     # Loop through each image of that person
