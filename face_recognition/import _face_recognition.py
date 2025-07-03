@@ -30,6 +30,7 @@ video_capture = cv2.VideoCapture(0)
 
 while True:
     ret, frame = video_capture.read()
+    frame=cv2.flip(frame,1)
     if not ret:
         break
 
