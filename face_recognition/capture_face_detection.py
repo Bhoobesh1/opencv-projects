@@ -12,7 +12,6 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_fronta
 
 # Start webcam
 cap = cv2.VideoCapture(0)
-
 count = 0
 
 while True:
