@@ -18,7 +18,7 @@ while True:
     ret, frame = cap.read()
     if not ret:
         break
-
+    
     faces = face_cascade.detectMultiScale(frame, 1.1, 5)
 
     for (x, y, w, h) in faces:
